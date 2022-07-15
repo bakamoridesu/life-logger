@@ -3,9 +3,11 @@ import './App.css';
 
 function App() {
   const [taskText, setTaskText] = useState('')
+
   const handleChange = (e) => {
     setTaskText(e.target.value)
   }
+
   return (
     <div className="App">
       <h2>Completed task:</h2>
