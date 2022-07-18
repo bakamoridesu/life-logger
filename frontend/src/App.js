@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import './App.css';
+import {getTasks} from "./api";
 
 function App() {
   const [taskText, setTaskText] = useState('')
@@ -7,6 +8,10 @@ function App() {
   const handleChange = (e) => {
     setTaskText(e.target.value)
   }
+
+  useEffect(() => {
+    getTasks().then(res => console.log(res))
+  }, [])
 
   return (
     <div className="App">
