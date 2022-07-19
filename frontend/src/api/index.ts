@@ -5,8 +5,10 @@ const api = axios.create({
   baseURL,
 })
 
-export const getTasks = () =>
-  api.get('/tasks')
+export const getTasks = async () => {
+  const { data } = await api.get('/tasks')
+  return data
+}
 
 export const createTask = (content: string) =>
   api.post('/tasks', {content})
