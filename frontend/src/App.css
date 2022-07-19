@@ -1,27 +1,5 @@
-html, body {
-  box-sizing: border-box;
-}
-
 .App {
   text-align: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 25px;
-  padding: 10%;
-}
-
-textarea {
-  font-size: 24px;
-  width: 500px;
-  padding: 15px;
-}
-
-button {
-  width: 150px;
-  padding: 15px;
-  font-size: 24px;
 }
 
 .App-logo {
