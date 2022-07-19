@@ -1,6 +1,4 @@
 import React, { ChangeEvent, useState } from 'react'
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { createTask } from "../../api";
 import { useCreateTask } from "../query";
 
 export const NewTask = () => {
